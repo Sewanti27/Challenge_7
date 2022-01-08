@@ -1,0 +1,151 @@
+body{
+  background-color: hsl(229, 57%, 11%);
+  font-family: 'Raleway', sans-serif;
+}
+
+.color1{
+  margin-left:10px;
+}
+.class1{
+  margin-right:4px;
+  padding:5px;
+  border:5px;
+  width:25px;
+  background-color:hsl(229, 57%, 11%);
+  border-radius: 5px;
+}
+.class2{
+  width:115px;
+}
+.class3{
+  padding-top: 20px;
+  margin-left:20px;
+}
+.document{
+  margin:0;
+  padding:0;
+}
+.Logobox{
+  background-color: hsl(228, 56%, 26%);
+  width:15%;
+  position:absolute;
+  top:30%;
+  left:20%;
+  z-index: +5;
+  height:120px;
+  border-radius:5px 70px 5px 5px;
+}
+
+.Logo{
+  padding-top:15%;
+  padding-left:30%;
+}
+.desktopimg{
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+.form-label,#customRange3{
+  width:40%;
+  background-color: hsl(228, 56%, 26%);
+  z-index:+5;
+
+}
+.form-label{
+  position: absolute;
+  top:33.5%;
+  left:40%;
+  color:white;
+  padding-left:3%;
+  padding-right:3%;
+  padding-top:1%;
+  height:60px;
+  border-radius: 5px;
+}
+
+#customRange3{
+  position:absolute;
+  top:39%;
+  left:40%;
+  padding-left:3%;
+  padding-right:3%;
+  height:10%;
+  padding-top:0;
+  border-radius: 5px;
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background: hsl(228, 56%, 26%);
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      background: -webkit-linear-gradient(to right,  hsl(6, 100%, 80%), hsl(335, 100%, 65%)); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+      width: 12.5px;
+      -webkit-appearance: none;
+      height: 12.5px;
+      cursor: ew-resize;
+      background:white;
+    }
+
+}
+
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: absolute;
+  left:67%;
+  top:25%;
+	width: 100px;
+	height: 55px;
+	background-color: lightyellow;
+  z-index: +10;
+  border-radius: 5px;
+}
+.border{
+  border: 8px solid #666;
+}
+.round{
+  border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+
+}
+
+.tri-right.border.btm-right:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -8px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+.tri-right.btm-right:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 0px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+.size{
+  font-size: 14px;
+}
